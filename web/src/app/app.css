@@ -1,0 +1,122 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  /* No backdrop-filter here: it would create a containing block and trap the
+     Lab panel (position: fixed) inside the header. */
+  background: var(--color-canvas);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  height: var(--header-height);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.brand__mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.brand__mark svg {
+  width: 18px;
+  height: 18px;
+}
+
+.brand__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-tight);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  font-size: var(--text-md);
+}
+
+.nav__link {
+  color: var(--color-text-muted);
+  font-weight: var(--weight-medium);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.nav__link:hover {
+  color: var(--color-text);
+}
+
+.nav__link--active {
+  color: var(--color-text);
+}
+
+.nav__link--muted {
+  color: var(--color-text-subtle);
+  cursor: default;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border-top: var(--border-width) solid var(--color-border);
+  background: var(--color-canvas-subtle);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block: var(--space-6);
+  color: var(--color-text-subtle);
+  font-size: var(--text-xs);
+}
+
+.footer__meta {
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 720px) {
+  .header__inner {
+    gap: var(--space-4);
+  }
+
+  .nav {
+    display: none;
+  }
+}

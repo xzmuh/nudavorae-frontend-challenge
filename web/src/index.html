@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Servio — service catalog</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="favicon.ico" />
+    <script>
+      // Theme is applied before first paint so there is never a flash of the
+      // wrong palette. Scroll restoration is manual: the catalog restores its
+      // own position when you come back from a service.
+      (function () {
+        try {
+          var stored = localStorage.getItem('servio.theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme =
+            stored === 'light' || stored === 'dark' ? stored : prefersDark ? 'dark' : 'light';
+        } catch (error) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      })();
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

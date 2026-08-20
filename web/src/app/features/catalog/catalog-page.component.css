@@ -1,0 +1,132 @@
+.page {
+  display: grid;
+  gap: var(--space-5);
+  padding-block: var(--space-8) var(--space-11);
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.head__text {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.head__title {
+  font-size: var(--text-3xl);
+}
+
+.head__subtitle {
+  max-width: 62ch;
+  color: var(--color-text-muted);
+  font-size: var(--text-md);
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 20px;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.results strong {
+  color: var(--color-text);
+  font-weight: var(--weight-semibold);
+}
+
+.results__term {
+  color: var(--color-accent);
+}
+
+.results__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  animation: pulse 1.1s var(--ease-in-out) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: var(--space-5);
+  margin: 0;
+}
+
+.grid > li {
+  display: block;
+  animation: fade-in var(--duration-base) var(--ease-out);
+}
+
+.paging-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-width) solid var(--color-danger);
+  border-radius: var(--radius-md);
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.more {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+}
+
+.more__end {
+  color: var(--color-text-subtle);
+  font-size: var(--text-sm);
+}
+
+.sentinel {
+  width: 100%;
+  height: 1px;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: var(--radius-pill);
+  animation: spin 0.7s linear infinite;
+}
+
+@media (max-width: 720px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .head__title {
+    font-size: var(--text-2xl);
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-4);
+  }
+}
