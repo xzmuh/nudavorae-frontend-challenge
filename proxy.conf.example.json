@@ -1,0 +1,22 @@
+{
+  "//": [
+    "Copy this into app/ and point angular.json at it (serve.options.proxyConfig),",
+    "or delete it and talk to http://localhost:4010 directly.",
+    "",
+    "Either works. The stub sends permissive CORS headers, so a direct cross-origin",
+    "call with the Authorization header will succeed without a proxy. Proxying keeps",
+    "the app on one origin, which makes the relative URLs in your code shorter and",
+    "means the browser never sends a preflight. Your call, and it is the sort of",
+    "small decision DECISIONS.md is for."
+  ],
+  "/packs": {
+    "target": "http://localhost:4010",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/media": {
+    "target": "http://localhost:4010",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

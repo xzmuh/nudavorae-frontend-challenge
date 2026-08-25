@@ -1,0 +1,2921 @@
+[
+  {
+    "id": "pack_0000",
+    "title": "Latent Hours",
+    "creator_handle": "lumen_ash",
+    "price_cents": 1499,
+    "cover_media_id": "med_0000",
+    "description": "69 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": null,
+    "review_count": 0,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [],
+    "created_at": "2025-06-01T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0001",
+    "title": "Latitude, Late",
+    "creator_handle": "still_orbit",
+    "price_cents": 2999,
+    "cover_media_id": "med_0001",
+    "description": "72 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.8",
+    "review_count": 4,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0,
+      "5": 2
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0001_0",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-17T18:40:00.000Z"
+      },
+      {
+        "id": "rev_0001_1",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-12T14:36:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-04T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0002",
+    "title": "Latex and Lantern Light",
+    "creator_handle": "juno_reyes",
+    "price_cents": 2999,
+    "cover_media_id": "med_0002",
+    "description": "60 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 4,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 2
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0002_1",
+        "author_handle": "tallgrass",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-05-21T14:00:00.000Z"
+      },
+      {
+        "id": "rev_0002_0",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-02-16T17:18:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-07T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0003",
+    "title": "Hollow Sessions",
+    "creator_handle": "pale_harbour",
+    "price_cents": 4999,
+    "cover_media_id": "med_0003",
+    "description": "42 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 31,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 5,
+      "4": 6,
+      "5": 16
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0003_3",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-17T02:32:00.000Z"
+      },
+      {
+        "id": "rev_0003_2",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-05-05T05:12:00.000Z"
+      },
+      {
+        "id": "rev_0003_0",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-03-30T06:01:00.000Z"
+      },
+      {
+        "id": "rev_0003_1",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-06T16:49:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-10T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0004",
+    "title": "Sable Notes",
+    "creator_handle": "oak_and_iron",
+    "price_cents": 1199,
+    "cover_media_id": "med_0004",
+    "description": "61 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.8",
+    "review_count": 9,
+    "distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 6
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0004_1",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-10T10:17:00.000Z"
+      },
+      {
+        "id": "rev_0004_0",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-02-23T05:00:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-13T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0005",
+    "title": "Paper Diaries",
+    "creator_handle": "lumen_ash",
+    "price_cents": 1499,
+    "cover_media_id": "med_0005",
+    "description": "21 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 16,
+    "distribution": {
+      "1": 1,
+      "2": 2,
+      "3": 0,
+      "4": 4,
+      "5": 9
+    },
+    "can_review": false,
+    "reason": "pack_removed",
+    "reviews": [
+      {
+        "id": "rev_0005_3",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-06-24T21:53:00.000Z"
+      },
+      {
+        "id": "rev_0005_4",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-06-09T13:34:00.000Z"
+      },
+      {
+        "id": "rev_0005_1",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-05-16T12:03:00.000Z"
+      },
+      {
+        "id": "rev_0005_2",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-04-29T18:33:00.000Z"
+      },
+      {
+        "id": "rev_0005_0",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-04-26T17:16:00.000Z"
+      },
+      {
+        "id": "rev_0005_5",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-03-16T08:52:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-16T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0006",
+    "title": "Lantern Windows",
+    "creator_handle": "oak_and_iron",
+    "price_cents": 1499,
+    "cover_media_id": "med_0006",
+    "description": "34 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.6",
+    "review_count": 24,
+    "distribution": {
+      "1": 2,
+      "2": 2,
+      "3": 6,
+      "4": 7,
+      "5": 7
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0006_3",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-06-20T14:44:00.000Z"
+      },
+      {
+        "id": "rev_0006_1",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-06-04T16:22:00.000Z"
+      },
+      {
+        "id": "rev_0006_5",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-05T15:26:00.000Z"
+      },
+      {
+        "id": "rev_0006_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-03-17T06:24:00.000Z"
+      },
+      {
+        "id": "rev_0006_4",
+        "author_handle": "seventeen_birds",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-03-13T12:44:00.000Z"
+      },
+      {
+        "id": "rev_0006_2",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-11T16:12:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-19T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0007",
+    "title": "Marble Frames",
+    "creator_handle": "juno_reyes",
+    "price_cents": 599,
+    "cover_media_id": "med_0007",
+    "description": "43 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.9",
+    "review_count": 25,
+    "distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 5,
+      "4": 6,
+      "5": 11
+    },
+    "can_review": false,
+    "reason": "not_purchased",
+    "reviews": [
+      {
+        "id": "rev_0007_1",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-22T09:04:00.000Z"
+      },
+      {
+        "id": "rev_0007_0",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-15T23:51:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-22T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0008",
+    "title": "Northern Letters",
+    "creator_handle": "edie_frost",
+    "price_cents": 1199,
+    "cover_media_id": "med_0008",
+    "description": "70 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 4,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 2
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0008_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-05-03T06:42:00.000Z"
+      },
+      {
+        "id": "rev_0008_1",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-04-17T17:51:00.000Z"
+      },
+      {
+        "id": "rev_0008_3",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-03-22T01:50:00.000Z"
+      },
+      {
+        "id": "rev_0008_2",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-03-12T13:30:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-25T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0009",
+    "title": "Glass Windows",
+    "creator_handle": "north_of_here",
+    "price_cents": 1199,
+    "cover_media_id": "med_0009",
+    "description": "50 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 12,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 4,
+      "4": 3,
+      "5": 5
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0009_4",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-07T15:39:00.000Z"
+      },
+      {
+        "id": "rev_0009_5",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-04-11T13:43:00.000Z"
+      },
+      {
+        "id": "rev_0009_3",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-09T12:24:00.000Z"
+      },
+      {
+        "id": "rev_0009_0",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-03-22T16:53:00.000Z"
+      },
+      {
+        "id": "rev_0009_1",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-02-21T08:52:00.000Z"
+      },
+      {
+        "id": "rev_0009_2",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-02-11T15:18:00.000Z"
+      }
+    ],
+    "created_at": "2025-06-28T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0010",
+    "title": "Salt Fragments",
+    "creator_handle": "marta_vane",
+    "price_cents": 4999,
+    "cover_media_id": "med_0010",
+    "description": "43 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 38,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 3,
+      "4": 7,
+      "5": 26
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0010_1",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-06-24T16:31:00.000Z"
+      },
+      {
+        "id": "rev_0010_0",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-23T03:13:00.000Z"
+      },
+      {
+        "id": "rev_0010_2",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-03T13:25:00.000Z"
+      },
+      {
+        "id": "rev_0010_3",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-03-11T20:07:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-01T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0011",
+    "title": "Winter Letters",
+    "creator_handle": "marta_vane",
+    "price_cents": 2999,
+    "cover_media_id": "med_0011",
+    "description": "41 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 27,
+    "distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 4,
+      "4": 5,
+      "5": 15
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0011_3",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-06-07T06:17:00.000Z"
+      },
+      {
+        "id": "rev_0011_1",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-05-09T03:46:00.000Z"
+      },
+      {
+        "id": "rev_0011_5",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-17T01:55:00.000Z"
+      },
+      {
+        "id": "rev_0011_2",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-18T04:12:00.000Z"
+      },
+      {
+        "id": "rev_0011_4",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-01-20T13:36:00.000Z"
+      },
+      {
+        "id": "rev_0011_0",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-01-03T23:48:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-04T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0012",
+    "title": "Static Studies",
+    "creator_handle": "lumen_ash",
+    "price_cents": 1499,
+    "cover_media_id": "med_0012",
+    "description": "31 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.8",
+    "review_count": 25,
+    "distribution": {
+      "1": 3,
+      "2": 0,
+      "3": 5,
+      "4": 7,
+      "5": 10
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0012_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-05-18T12:47:00.000Z"
+      },
+      {
+        "id": "rev_0012_2",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-01-23T18:05:00.000Z"
+      },
+      {
+        "id": "rev_0012_1",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-03T10:55:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-07T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0013",
+    "title": "Bright Windows",
+    "creator_handle": "marta_vane",
+    "price_cents": 599,
+    "cover_media_id": "med_0013",
+    "description": "41 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 6,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3,
+      "5": 3
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0013_1",
+        "author_handle": "seventeen_birds",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-06-20T13:01:00.000Z"
+      },
+      {
+        "id": "rev_0013_2",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-04-10T03:42:00.000Z"
+      },
+      {
+        "id": "rev_0013_3",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-25T01:44:00.000Z"
+      },
+      {
+        "id": "rev_0013_0",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-02-10T13:22:00.000Z"
+      },
+      {
+        "id": "rev_0013_4",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-01-08T21:39:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-10T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0014",
+    "title": "Quiet Afternoons",
+    "creator_handle": "saltmarsh",
+    "price_cents": 1999,
+    "cover_media_id": "med_0014",
+    "description": "48 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.4",
+    "review_count": 32,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 11,
+      "5": 18
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0014_1",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-02T04:07:00.000Z"
+      },
+      {
+        "id": "rev_0014_0",
+        "author_handle": "seventeen_birds",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-03-07T22:55:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-13T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0015",
+    "title": "Bright Fragments",
+    "creator_handle": "lumen_ash",
+    "price_cents": 2999,
+    "cover_media_id": "med_0015",
+    "description": "42 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.0",
+    "review_count": 23,
+    "distribution": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 5,
+      "5": 12
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0015_1",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-07-01T23:39:00.000Z"
+      },
+      {
+        "id": "rev_0015_2",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-03T19:02:00.000Z"
+      },
+      {
+        "id": "rev_0015_0",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-01-14T16:48:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-16T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0016",
+    "title": "Bright Sketches",
+    "creator_handle": "lumen_ash",
+    "price_cents": 2999,
+    "cover_media_id": "med_0016",
+    "description": "17 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 31,
+    "distribution": {
+      "1": 3,
+      "2": 1,
+      "3": 0,
+      "4": 13,
+      "5": 14
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0016_1",
+        "author_handle": "tallgrass",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-07-20T19:42:00.000Z"
+      },
+      {
+        "id": "rev_0016_0",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-15T04:23:00.000Z"
+      },
+      {
+        "id": "rev_0016_3",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-04-12T06:22:00.000Z"
+      },
+      {
+        "id": "rev_0016_4",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-03-12T22:18:00.000Z"
+      },
+      {
+        "id": "rev_0016_2",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-02-08T17:30:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-19T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0017",
+    "title": "Paper Postcards",
+    "creator_handle": "north_of_here",
+    "price_cents": 3999,
+    "cover_media_id": "med_0017",
+    "description": "24 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": null,
+    "review_count": 0,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [],
+    "created_at": "2025-07-22T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0018",
+    "title": "Lantern Interiors",
+    "creator_handle": "corvid_ln",
+    "price_cents": 2499,
+    "cover_media_id": "med_0018",
+    "description": "15 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 32,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 3,
+      "4": 8,
+      "5": 17
+    },
+    "can_review": false,
+    "reason": "not_purchased",
+    "reviews": [
+      {
+        "id": "rev_0018_4",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-16T00:59:00.000Z"
+      },
+      {
+        "id": "rev_0018_0",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-02-19T21:18:00.000Z"
+      },
+      {
+        "id": "rev_0018_3",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-01-31T11:22:00.000Z"
+      },
+      {
+        "id": "rev_0018_1",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-01-07T01:01:00.000Z"
+      },
+      {
+        "id": "rev_0018_2",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-01-06T06:14:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-25T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0019",
+    "title": "Sable Rooms",
+    "creator_handle": "edie_frost",
+    "price_cents": 899,
+    "cover_media_id": "med_0019",
+    "description": "76 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 4,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 2
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0019_0",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-05-08T19:00:00.000Z"
+      },
+      {
+        "id": "rev_0019_3",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-04-11T08:42:00.000Z"
+      },
+      {
+        "id": "rev_0019_1",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-04-05T19:42:00.000Z"
+      },
+      {
+        "id": "rev_0019_2",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-02-25T18:16:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-28T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0020",
+    "title": "Quiet Mornings",
+    "creator_handle": "nine_lanterns",
+    "price_cents": 899,
+    "cover_media_id": "med_0020",
+    "description": "59 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 28,
+    "distribution": {
+      "1": 0,
+      "2": 2,
+      "3": 6,
+      "4": 7,
+      "5": 13
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0020_0",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-06-11T13:06:00.000Z"
+      },
+      {
+        "id": "rev_0020_2",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-05-16T21:00:00.000Z"
+      },
+      {
+        "id": "rev_0020_3",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-09T04:19:00.000Z"
+      },
+      {
+        "id": "rev_0020_1",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-01-14T02:23:00.000Z"
+      }
+    ],
+    "created_at": "2025-07-31T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0021",
+    "title": "Bright Notes",
+    "creator_handle": "edie_frost",
+    "price_cents": 1999,
+    "cover_media_id": "med_0021",
+    "description": "44 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 33,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 4,
+      "4": 8,
+      "5": 17
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0021_1",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-07-17T04:05:00.000Z"
+      },
+      {
+        "id": "rev_0021_4",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-06-22T21:34:00.000Z"
+      },
+      {
+        "id": "rev_0021_2",
+        "author_handle": "seventeen_birds",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-06-20T13:03:00.000Z"
+      },
+      {
+        "id": "rev_0021_3",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-05-11T14:35:00.000Z"
+      },
+      {
+        "id": "rev_0021_5",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-03-06T04:15:00.000Z"
+      },
+      {
+        "id": "rev_0021_0",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-02-22T05:58:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-03T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0022",
+    "title": "Midnight Mornings",
+    "creator_handle": "north_of_here",
+    "price_cents": 1199,
+    "cover_media_id": "med_0022",
+    "description": "51 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.9",
+    "review_count": 18,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 3,
+      "4": 6,
+      "5": 7
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0022_0",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-06-06T13:42:00.000Z"
+      },
+      {
+        "id": "rev_0022_3",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-04-19T14:57:00.000Z"
+      },
+      {
+        "id": "rev_0022_1",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-04-18T03:02:00.000Z"
+      },
+      {
+        "id": "rev_0022_4",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-03-08T00:16:00.000Z"
+      },
+      {
+        "id": "rev_0022_2",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-19T06:46:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-06T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0023",
+    "title": "Golden Rooms",
+    "creator_handle": "saltmarsh",
+    "price_cents": 1199,
+    "cover_media_id": "med_0023",
+    "description": "24 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 19,
+    "distribution": {
+      "1": 0,
+      "2": 3,
+      "3": 0,
+      "4": 6,
+      "5": 10
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0023_2",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-07-10T18:14:00.000Z"
+      },
+      {
+        "id": "rev_0023_3",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-06-08T01:25:00.000Z"
+      },
+      {
+        "id": "rev_0023_0",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-05-21T13:11:00.000Z"
+      },
+      {
+        "id": "rev_0023_1",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-18T23:23:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-09T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0024",
+    "title": "Slow Interiors",
+    "creator_handle": "still_orbit",
+    "price_cents": 1499,
+    "cover_media_id": "med_0024",
+    "description": "33 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.8",
+    "review_count": 27,
+    "distribution": {
+      "1": 1,
+      "2": 4,
+      "3": 4,
+      "4": 8,
+      "5": 10
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0024_0",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-07-12T13:54:00.000Z"
+      },
+      {
+        "id": "rev_0024_2",
+        "author_handle": "small_hours",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-06T04:55:00.000Z"
+      },
+      {
+        "id": "rev_0024_1",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-31T05:11:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-12T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0025",
+    "title": "Quiet Rehearsals",
+    "creator_handle": "juno_reyes",
+    "price_cents": 599,
+    "cover_media_id": "med_0025",
+    "description": "80 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 37,
+    "distribution": {
+      "1": 2,
+      "2": 0,
+      "3": 5,
+      "4": 12,
+      "5": 18
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0025_2",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-04-06T03:54:00.000Z"
+      },
+      {
+        "id": "rev_0025_3",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-01T18:54:00.000Z"
+      },
+      {
+        "id": "rev_0025_1",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-21T11:08:00.000Z"
+      },
+      {
+        "id": "rev_0025_0",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-01-24T10:15:00.000Z"
+      },
+      {
+        "id": "rev_0025_4",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-01-01T02:00:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-15T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0026",
+    "title": "Winter Rehearsals",
+    "creator_handle": "nine_lanterns",
+    "price_cents": 599,
+    "cover_media_id": "med_0026",
+    "description": "56 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.9",
+    "review_count": 14,
+    "distribution": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 5,
+      "5": 6
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0026_2",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-07-15T00:57:00.000Z"
+      },
+      {
+        "id": "rev_0026_0",
+        "author_handle": "seventeen_birds",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-07-10T04:16:00.000Z"
+      },
+      {
+        "id": "rev_0026_1",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-02-22T02:29:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-18T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0027",
+    "title": "Latent Rooms",
+    "creator_handle": "saltmarsh",
+    "price_cents": 899,
+    "cover_media_id": "med_0027",
+    "description": "17 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.6",
+    "review_count": 19,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 4,
+      "5": 13
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0027_2",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-07-02T16:36:00.000Z"
+      },
+      {
+        "id": "rev_0027_0",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-02-13T09:31:00.000Z"
+      },
+      {
+        "id": "rev_0027_1",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-07T00:54:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-21T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0028",
+    "title": "Sable Fragments",
+    "creator_handle": "saltmarsh",
+    "price_cents": 1199,
+    "cover_media_id": "med_0028",
+    "description": "40 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.0",
+    "review_count": 20,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 5,
+      "4": 3,
+      "5": 10
+    },
+    "can_review": false,
+    "reason": "pack_removed",
+    "reviews": [
+      {
+        "id": "rev_0028_2",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-13T23:34:00.000Z"
+      },
+      {
+        "id": "rev_0028_0",
+        "author_handle": "penumbra_j",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-02-27T11:11:00.000Z"
+      },
+      {
+        "id": "rev_0028_5",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-02-25T14:16:00.000Z"
+      },
+      {
+        "id": "rev_0028_4",
+        "author_handle": "oncewas",
+        "score": 5,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-01-24T05:28:00.000Z"
+      },
+      {
+        "id": "rev_0028_1",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-01-12T03:20:00.000Z"
+      },
+      {
+        "id": "rev_0028_3",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-01-01T20:28:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-24T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0029",
+    "title": "Amber Rehearsals",
+    "creator_handle": "north_of_here",
+    "price_cents": 1199,
+    "cover_media_id": "med_0029",
+    "description": "20 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 23,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 6,
+      "5": 15
+    },
+    "can_review": false,
+    "reason": "not_purchased",
+    "reviews": [
+      {
+        "id": "rev_0029_2",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-06-25T20:10:00.000Z"
+      },
+      {
+        "id": "rev_0029_3",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-06-05T18:26:00.000Z"
+      },
+      {
+        "id": "rev_0029_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-06-05T02:38:00.000Z"
+      },
+      {
+        "id": "rev_0029_4",
+        "author_handle": "seventeen_birds",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-27T11:22:00.000Z"
+      },
+      {
+        "id": "rev_0029_1",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-23T20:45:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-27T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0030",
+    "title": "Amber Postcards",
+    "creator_handle": "marta_vane",
+    "price_cents": 1199,
+    "cover_media_id": "med_0030",
+    "description": "45 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 19,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 4,
+      "5": 11
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0030_2",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-07-14T12:57:00.000Z"
+      },
+      {
+        "id": "rev_0030_1",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-30T21:06:00.000Z"
+      },
+      {
+        "id": "rev_0030_3",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-29T22:18:00.000Z"
+      },
+      {
+        "id": "rev_0030_4",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-03-30T02:32:00.000Z"
+      },
+      {
+        "id": "rev_0030_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-03-15T02:35:00.000Z"
+      }
+    ],
+    "created_at": "2025-08-30T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0031",
+    "title": "Northern Portraits",
+    "creator_handle": "nine_lanterns",
+    "price_cents": 2499,
+    "cover_media_id": "med_0031",
+    "description": "77 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 39,
+    "distribution": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 8,
+      "5": 24
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0031_0",
+        "author_handle": "m_delacroix",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-21T12:31:00.000Z"
+      },
+      {
+        "id": "rev_0031_1",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-04-17T10:59:00.000Z"
+      },
+      {
+        "id": "rev_0031_3",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-04-12T22:03:00.000Z"
+      },
+      {
+        "id": "rev_0031_2",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-02-25T00:46:00.000Z"
+      },
+      {
+        "id": "rev_0031_4",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-02-10T23:01:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-02T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0032",
+    "title": "Static Windows",
+    "creator_handle": "edie_frost",
+    "price_cents": 2499,
+    "cover_media_id": "med_0032",
+    "description": "68 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 19,
+    "distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 4,
+      "5": 13
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0032_1",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-05-01T09:23:00.000Z"
+      },
+      {
+        "id": "rev_0032_3",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-04-19T16:38:00.000Z"
+      },
+      {
+        "id": "rev_0032_2",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-03-17T00:16:00.000Z"
+      },
+      {
+        "id": "rev_0032_5",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-03-05T21:34:00.000Z"
+      },
+      {
+        "id": "rev_0032_4",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-14T04:44:00.000Z"
+      },
+      {
+        "id": "rev_0032_0",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-01-27T18:18:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-05T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0033",
+    "title": "Lantern Letters",
+    "creator_handle": "north_of_here",
+    "price_cents": 2999,
+    "cover_media_id": "med_0033",
+    "description": "68 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 39,
+    "distribution": {
+      "1": 6,
+      "2": 0,
+      "3": 2,
+      "4": 7,
+      "5": 24
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0033_0",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-06-25T01:16:00.000Z"
+      },
+      {
+        "id": "rev_0033_1",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-04-02T17:03:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-08T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0034",
+    "title": "Salt Postcards",
+    "creator_handle": "edie_frost",
+    "price_cents": 899,
+    "cover_media_id": "med_0034",
+    "description": "41 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": null,
+    "review_count": 0,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [],
+    "created_at": "2025-09-11T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0035",
+    "title": "Hollow Sessions",
+    "creator_handle": "oak_and_iron",
+    "price_cents": 2499,
+    "cover_media_id": "med_0035",
+    "description": "64 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 40,
+    "distribution": {
+      "1": 0,
+      "2": 4,
+      "3": 3,
+      "4": 14,
+      "5": 19
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0035_1",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-06-04T15:13:00.000Z"
+      },
+      {
+        "id": "rev_0035_2",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-30T08:01:00.000Z"
+      },
+      {
+        "id": "rev_0035_0",
+        "author_handle": "penumbra_j",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-05-04T19:14:00.000Z"
+      },
+      {
+        "id": "rev_0035_3",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-28T10:32:00.000Z"
+      },
+      {
+        "id": "rev_0035_4",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-04-27T07:24:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-14T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0036",
+    "title": "Latent Studies",
+    "creator_handle": "pale_harbour",
+    "price_cents": 2499,
+    "cover_media_id": "med_0036",
+    "description": "58 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 10,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 3,
+      "5": 5
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0036_1",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-22T04:14:00.000Z"
+      },
+      {
+        "id": "rev_0036_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-03-17T01:40:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-17T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0037",
+    "title": "Slow Chapters",
+    "creator_handle": "still_orbit",
+    "price_cents": 3999,
+    "cover_media_id": "med_0037",
+    "description": "64 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 11,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 5,
+      "5": 4
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0037_0",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-05-05T09:34:00.000Z"
+      },
+      {
+        "id": "rev_0037_1",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-04-02T07:50:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-20T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0038",
+    "title": "Glass Notes",
+    "creator_handle": "pale_harbour",
+    "price_cents": 2499,
+    "cover_media_id": "med_0038",
+    "description": "72 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 6,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 4
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0038_3",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-06-03T01:12:00.000Z"
+      },
+      {
+        "id": "rev_0038_5",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-05-04T07:24:00.000Z"
+      },
+      {
+        "id": "rev_0038_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-30T04:03:00.000Z"
+      },
+      {
+        "id": "rev_0038_2",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-03-13T02:57:00.000Z"
+      },
+      {
+        "id": "rev_0038_1",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-02T18:24:00.000Z"
+      },
+      {
+        "id": "rev_0038_4",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-02-05T00:34:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-23T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0039",
+    "title": "Slow Mornings",
+    "creator_handle": "marta_vane",
+    "price_cents": 599,
+    "cover_media_id": "med_0039",
+    "description": "71 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 34,
+    "distribution": {
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 24
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0039_1",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-07-20T04:56:00.000Z"
+      },
+      {
+        "id": "rev_0039_0",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-06-26T02:55:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-26T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0040",
+    "title": "Amber Sketches",
+    "creator_handle": "lumen_ash",
+    "price_cents": 1199,
+    "cover_media_id": "med_0040",
+    "description": "18 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 18,
+    "distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 5,
+      "5": 10
+    },
+    "can_review": false,
+    "reason": "not_purchased",
+    "reviews": [
+      {
+        "id": "rev_0040_5",
+        "author_handle": "small_hours",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-07-16T22:22:00.000Z"
+      },
+      {
+        "id": "rev_0040_4",
+        "author_handle": "small_hours",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-05-07T17:05:00.000Z"
+      },
+      {
+        "id": "rev_0040_1",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-03-25T01:29:00.000Z"
+      },
+      {
+        "id": "rev_0040_2",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-03-21T15:58:00.000Z"
+      },
+      {
+        "id": "rev_0040_0",
+        "author_handle": "small_hours",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-03-04T04:51:00.000Z"
+      },
+      {
+        "id": "rev_0040_3",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-15T08:29:00.000Z"
+      }
+    ],
+    "created_at": "2025-09-29T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0041",
+    "title": "Amber Hours",
+    "creator_handle": "pale_harbour",
+    "price_cents": 2499,
+    "cover_media_id": "med_0041",
+    "description": "68 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.4",
+    "review_count": 23,
+    "distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 7,
+      "5": 14
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0041_3",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-07-20T15:10:00.000Z"
+      },
+      {
+        "id": "rev_0041_5",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-06-20T09:17:00.000Z"
+      },
+      {
+        "id": "rev_0041_4",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-20T15:29:00.000Z"
+      },
+      {
+        "id": "rev_0041_1",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-13T16:05:00.000Z"
+      },
+      {
+        "id": "rev_0041_0",
+        "author_handle": "small_hours",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-03-31T13:52:00.000Z"
+      },
+      {
+        "id": "rev_0041_2",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-03-06T06:41:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-02T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0042",
+    "title": "Golden Sessions",
+    "creator_handle": "still_orbit",
+    "price_cents": 599,
+    "cover_media_id": "med_0042",
+    "description": "49 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.0",
+    "review_count": 30,
+    "distribution": {
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 7,
+      "5": 15
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0042_0",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-07-19T21:43:00.000Z"
+      },
+      {
+        "id": "rev_0042_1",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-03-31T00:26:00.000Z"
+      },
+      {
+        "id": "rev_0042_2",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-02-27T22:19:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-05T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0043",
+    "title": "Amber Postcards",
+    "creator_handle": "north_of_here",
+    "price_cents": 599,
+    "cover_media_id": "med_0043",
+    "description": "33 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.7",
+    "review_count": 24,
+    "distribution": {
+      "1": 2,
+      "2": 2,
+      "3": 5,
+      "4": 8,
+      "5": 7
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0043_1",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-03-26T09:16:00.000Z"
+      },
+      {
+        "id": "rev_0043_2",
+        "author_handle": "seventeen_birds",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-01-30T02:10:00.000Z"
+      },
+      {
+        "id": "rev_0043_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-01-01T06:34:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-08T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0044",
+    "title": "Amber Frames",
+    "creator_handle": "corvid_ln",
+    "price_cents": 899,
+    "cover_media_id": "med_0044",
+    "description": "56 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 34,
+    "distribution": {
+      "1": 2,
+      "2": 2,
+      "3": 4,
+      "4": 5,
+      "5": 21
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0044_1",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-07-04T03:51:00.000Z"
+      },
+      {
+        "id": "rev_0044_2",
+        "author_handle": "seventeen_birds",
+        "score": 3,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-24T14:05:00.000Z"
+      },
+      {
+        "id": "rev_0044_3",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-04-10T12:20:00.000Z"
+      },
+      {
+        "id": "rev_0044_0",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-03-19T23:42:00.000Z"
+      },
+      {
+        "id": "rev_0044_4",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-22T03:42:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-11T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0045",
+    "title": "Golden Sessions",
+    "creator_handle": "north_of_here",
+    "price_cents": 899,
+    "cover_media_id": "med_0045",
+    "description": "17 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.5",
+    "review_count": 15,
+    "distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 4,
+      "5": 10
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0045_4",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-05-28T12:03:00.000Z"
+      },
+      {
+        "id": "rev_0045_2",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-14T14:11:00.000Z"
+      },
+      {
+        "id": "rev_0045_1",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-05-11T05:56:00.000Z"
+      },
+      {
+        "id": "rev_0045_3",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-05-10T19:39:00.000Z"
+      },
+      {
+        "id": "rev_0045_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-03-10T09:15:00.000Z"
+      },
+      {
+        "id": "rev_0045_5",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-02-20T07:10:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-14T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0046",
+    "title": "Latent Chapters",
+    "creator_handle": "quiet_atlas",
+    "price_cents": 2999,
+    "cover_media_id": "med_0046",
+    "description": "24 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 25,
+    "distribution": {
+      "1": 0,
+      "2": 2,
+      "3": 3,
+      "4": 7,
+      "5": 13
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0046_2",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-07-03T23:45:00.000Z"
+      },
+      {
+        "id": "rev_0046_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-06-23T03:27:00.000Z"
+      },
+      {
+        "id": "rev_0046_1",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-05-26T21:37:00.000Z"
+      },
+      {
+        "id": "rev_0046_5",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-05-18T02:43:00.000Z"
+      },
+      {
+        "id": "rev_0046_3",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-01-27T21:07:00.000Z"
+      },
+      {
+        "id": "rev_0046_4",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-01-13T08:29:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-17T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0047",
+    "title": "Lantern Rehearsals",
+    "creator_handle": "saltmarsh",
+    "price_cents": 899,
+    "cover_media_id": "med_0047",
+    "description": "54 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 16,
+    "distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 3,
+      "4": 4,
+      "5": 8
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0047_1",
+        "author_handle": "blue_hour",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-05-12T12:08:00.000Z"
+      },
+      {
+        "id": "rev_0047_3",
+        "author_handle": "penumbra_j",
+        "score": 5,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-04-20T23:51:00.000Z"
+      },
+      {
+        "id": "rev_0047_0",
+        "author_handle": "penumbra_j",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-07T22:12:00.000Z"
+      },
+      {
+        "id": "rev_0047_2",
+        "author_handle": "penumbra_j",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-02-21T18:51:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-20T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0048",
+    "title": "Sable Windows",
+    "creator_handle": "pale_harbour",
+    "price_cents": 2499,
+    "cover_media_id": "med_0048",
+    "description": "53 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 34,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 3,
+      "4": 12,
+      "5": 15
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0048_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-07-02T12:10:00.000Z"
+      },
+      {
+        "id": "rev_0048_2",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-03-09T23:34:00.000Z"
+      },
+      {
+        "id": "rev_0048_1",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-02-12T02:15:00.000Z"
+      },
+      {
+        "id": "rev_0048_3",
+        "author_handle": "m_delacroix",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-02T22:50:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-23T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0049",
+    "title": "Wandering Rooms",
+    "creator_handle": "nine_lanterns",
+    "price_cents": 2999,
+    "cover_media_id": "med_0049",
+    "description": "56 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.9",
+    "review_count": 9,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 5
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0049_0",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-06-13T02:11:00.000Z"
+      },
+      {
+        "id": "rev_0049_3",
+        "author_handle": "quiet_reader",
+        "score": 4,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-05-19T03:08:00.000Z"
+      },
+      {
+        "id": "rev_0049_2",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-04-15T07:06:00.000Z"
+      },
+      {
+        "id": "rev_0049_1",
+        "author_handle": "seventeen_birds",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-03-22T08:13:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-26T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0050",
+    "title": "Northern Fragments",
+    "creator_handle": "pale_harbour",
+    "price_cents": 599,
+    "cover_media_id": "med_0050",
+    "description": "59 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 40,
+    "distribution": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 13,
+      "5": 20
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0050_0",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-06T08:56:00.000Z"
+      },
+      {
+        "id": "rev_0050_1",
+        "author_handle": "tallgrass",
+        "score": 5,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-04-22T07:28:00.000Z"
+      }
+    ],
+    "created_at": "2025-10-29T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0051",
+    "title": "Glass Portraits",
+    "creator_handle": "pale_harbour",
+    "price_cents": 599,
+    "cover_media_id": "med_0051",
+    "description": "17 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": null,
+    "review_count": 0,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "can_review": false,
+    "reason": "not_purchased",
+    "reviews": [],
+    "created_at": "2025-11-01T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0052",
+    "title": "Northern Rooms",
+    "creator_handle": "juno_reyes",
+    "price_cents": 3999,
+    "cover_media_id": "med_0052",
+    "description": "25 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.4",
+    "review_count": 30,
+    "distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 3,
+      "4": 8,
+      "5": 18
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0052_2",
+        "author_handle": "quiet_reader",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-06-18T04:08:00.000Z"
+      },
+      {
+        "id": "rev_0052_1",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-05T19:52:00.000Z"
+      },
+      {
+        "id": "rev_0052_0",
+        "author_handle": "tallgrass",
+        "score": 4,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-02-11T18:20:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-04T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0053",
+    "title": "Velvet Diaries",
+    "creator_handle": "north_of_here",
+    "price_cents": 599,
+    "cover_media_id": "med_0053",
+    "description": "34 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.2",
+    "review_count": 39,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 4,
+      "4": 10,
+      "5": 21
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0053_0",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-07-05T08:22:00.000Z"
+      },
+      {
+        "id": "rev_0053_1",
+        "author_handle": "oncewas",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-04-22T02:28:00.000Z"
+      },
+      {
+        "id": "rev_0053_3",
+        "author_handle": "small_hours",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-08T00:37:00.000Z"
+      },
+      {
+        "id": "rev_0053_2",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-02-11T05:45:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-07T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0054",
+    "title": "Paper Postcards",
+    "creator_handle": "pale_harbour",
+    "price_cents": 899,
+    "cover_media_id": "med_0054",
+    "description": "74 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 4,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 2
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0054_3",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-27T11:23:00.000Z"
+      },
+      {
+        "id": "rev_0054_1",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-05-08T09:05:00.000Z"
+      },
+      {
+        "id": "rev_0054_0",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-02-19T02:21:00.000Z"
+      },
+      {
+        "id": "rev_0054_2",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-15T09:25:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-10T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0055",
+    "title": "Latent Portraits",
+    "creator_handle": "pale_harbour",
+    "price_cents": 2999,
+    "cover_media_id": "med_0055",
+    "description": "30 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.1",
+    "review_count": 34,
+    "distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 2,
+      "4": 14,
+      "5": 14
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0055_2",
+        "author_handle": "blue_hour",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-06-22T04:56:00.000Z"
+      },
+      {
+        "id": "rev_0055_0",
+        "author_handle": "rook_and_key",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-05-05T23:01:00.000Z"
+      },
+      {
+        "id": "rev_0055_4",
+        "author_handle": "tallgrass",
+        "score": 3,
+        "body": "Exactly what the description promised, and the files were bigger than I expected.",
+        "created_at": "2026-04-16T03:04:00.000Z"
+      },
+      {
+        "id": "rev_0055_3",
+        "author_handle": "blue_hour",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-15T10:53:00.000Z"
+      },
+      {
+        "id": "rev_0055_1",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-01-28T23:26:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-13T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0056",
+    "title": "Glass Hours",
+    "creator_handle": "north_of_here",
+    "price_cents": 2499,
+    "cover_media_id": "med_0056",
+    "description": "47 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 30,
+    "distribution": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 8,
+      "5": 18
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0056_1",
+        "author_handle": "oncewas",
+        "score": 4,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-04-09T22:02:00.000Z"
+      },
+      {
+        "id": "rev_0056_3",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Solid, though I would have liked a few more in the same series.",
+        "created_at": "2026-03-30T16:12:00.000Z"
+      },
+      {
+        "id": "rev_0056_0",
+        "author_handle": "ash_and_ink",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-03-14T01:57:00.000Z"
+      },
+      {
+        "id": "rev_0056_2",
+        "author_handle": "m_delacroix",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-02-26T17:05:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-16T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0057",
+    "title": "Paper Fragments",
+    "creator_handle": "edie_frost",
+    "price_cents": 1999,
+    "cover_media_id": "med_0057",
+    "description": "71 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "5.0",
+    "review_count": 3,
+    "distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 3
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0057_1",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-07-10T01:19:00.000Z"
+      },
+      {
+        "id": "rev_0057_0",
+        "author_handle": "small_hours",
+        "score": 3,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-03-09T20:07:00.000Z"
+      },
+      {
+        "id": "rev_0057_2",
+        "author_handle": "ash_and_ink",
+        "score": 3,
+        "body": "Better than the preview suggests. The preview does it no favours.",
+        "created_at": "2026-01-13T01:43:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-19T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0058",
+    "title": "Latent Sessions",
+    "creator_handle": "corvid_ln",
+    "price_cents": 1199,
+    "cover_media_id": "med_0058",
+    "description": "66 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "4.3",
+    "review_count": 21,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 3,
+      "4": 2,
+      "5": 14
+    },
+    "can_review": false,
+    "reason": "already_reviewed",
+    "reviews": [
+      {
+        "id": "rev_0058_0",
+        "author_handle": "penumbra_j",
+        "score": 3,
+        "body": "The lighting in the second half is the reason to buy this one.",
+        "created_at": "2026-07-02T03:10:00.000Z"
+      },
+      {
+        "id": "rev_0058_1",
+        "author_handle": "rook_and_key",
+        "score": 4,
+        "body": "Worth it for the last eight alone.",
+        "created_at": "2026-03-21T07:13:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-22T09:30:00.000Z"
+  },
+  {
+    "id": "pack_0059",
+    "title": "Bright Studies",
+    "creator_handle": "pale_harbour",
+    "price_cents": 899,
+    "cover_media_id": "med_0059",
+    "description": "64 files, delivered privately and watermarked per buyer. Shot over a single season and sequenced rather than dumped. Full resolution, no upscaling, no third-party hosting.",
+    "rating": "3.9",
+    "review_count": 7,
+    "distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1,
+      "5": 4
+    },
+    "can_review": true,
+    "reason": null,
+    "reviews": [
+      {
+        "id": "rev_0059_4",
+        "author_handle": "penumbra_j",
+        "score": 4,
+        "body": "Good set. A couple of the frames repeat, but the rest carry it.",
+        "created_at": "2026-07-09T21:54:00.000Z"
+      },
+      {
+        "id": "rev_0059_3",
+        "author_handle": "rook_and_key",
+        "score": 5,
+        "body": "Third one I have bought from this creator and the most consistent.",
+        "created_at": "2026-04-07T21:23:00.000Z"
+      },
+      {
+        "id": "rev_0059_2",
+        "author_handle": "ash_and_ink",
+        "score": 4,
+        "body": "Arrived quickly and the quality holds up at full size.",
+        "created_at": "2026-03-07T00:19:00.000Z"
+      },
+      {
+        "id": "rev_0059_0",
+        "author_handle": "quiet_reader",
+        "score": 5,
+        "body": "Not quite my thing in the end, but the craft is obviously there.",
+        "created_at": "2026-03-01T10:33:00.000Z"
+      },
+      {
+        "id": "rev_0059_1",
+        "author_handle": "m_delacroix",
+        "score": 3,
+        "body": "Downloaded fine, watermarking is unobtrusive, no complaints.",
+        "created_at": "2026-01-18T14:54:00.000Z"
+      }
+    ],
+    "created_at": "2025-11-25T09:30:00.000Z"
+  }
+]

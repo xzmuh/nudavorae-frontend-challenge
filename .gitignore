@@ -3,3 +3,6 @@ dist/
 .angular/
 *.log
 .DS_Store
+
+# The brief itself. Its last page asks that it not be redistributed.
+nudavorae_frontend_challenge.pdf

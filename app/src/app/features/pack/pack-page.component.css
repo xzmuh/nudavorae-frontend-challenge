@@ -1,0 +1,447 @@
+/*
+ * No cap of its own. `--page-max` on the shell is the site's measure — the one
+ * the header's brand and theme switch are aligned to — and a second, narrower
+ * limit here made the pack the only screen that stopped short of it.
+ */
+:host {
+  display: block;
+}
+
+/* ── breadcrumb ────────────────────────────────────────────────────────── */
+
+.crumbs {
+  margin-block-end: var(--space-4);
+}
+
+.crumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  font-size: var(--text-14);
+}
+
+.crumbs__item + .crumbs__item::before {
+  content: '/';
+  margin-inline-end: var(--space-2);
+  color: var(--text-muted);
+}
+
+.crumbs__link {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.crumbs__link:hover {
+  color: var(--text-primary);
+}
+
+/* The page you are on is not a link, and it is the one in the strong weight. */
+.crumbs__item--here {
+  min-inline-size: 0;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── layout ────────────────────────────────────────────────────────────── */
+
+/*
+ * Two columns: the pack on the left, what you can do about it on the right.
+ * The aside is sticky under the header, so the price and the buy control stay
+ * reachable however far down the reviews you have read.
+ */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.layout__main {
+  min-inline-size: 0;
+}
+
+.layout__side {
+  position: sticky;
+  /* Clears the sticky header, which owns the one value for its own height, and
+     leaves the same gap the page uses everywhere else. */
+  inset-block-start: calc(var(--header-height) + var(--space-4));
+}
+
+@media (max-width: 56rem) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* One column: the sidebar is above the reviews, and stops being sticky. */
+  .layout__side {
+    position: static;
+    grid-row: 1;
+  }
+}
+
+/* ── media ─────────────────────────────────────────────────────────────── */
+
+.media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border-subtle);
+  /* Page 6: radius 20 on sheets. */
+  border-radius: var(--radius-sheet);
+  overflow: hidden;
+}
+
+.media__image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.media__expand {
+  position: absolute;
+  inset-block-end: var(--space-3);
+  inset-inline-end: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: var(--target-min);
+  padding-inline: var(--space-4);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-control);
+  background: var(--surface-overlay);
+  color: var(--text-primary);
+  font-size: var(--text-14);
+  font-weight: 500;
+}
+
+.media__expand:hover {
+  background: var(--surface-raised);
+  border-color: var(--border-strong);
+}
+
+.media__expand svg {
+  inline-size: 15px;
+  block-size: 15px;
+  fill: currentColor;
+}
+
+/* The browser's own fullscreen: no frame, and the whole picture rather than a
+   crop of it — the `fit` input on the image does that half. */
+.media:fullscreen {
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: var(--surface-base);
+}
+
+/* ── heading ───────────────────────────────────────────────────────────── */
+
+.title {
+  margin-block-start: var(--space-6);
+  font-size: var(--text-30);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-start: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--text-14);
+}
+
+.meta__dot {
+  /* A text colour, not a border one: --border-strong answers a 3:1 question,
+     and this is text. */
+  color: var(--text-muted);
+}
+
+.meta__rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--text-secondary);
+}
+
+.meta__rating svg {
+  inline-size: 14px;
+  block-size: 14px;
+  fill: var(--rating-mark);
+}
+
+.meta__count {
+  color: var(--text-muted);
+}
+
+.meta__rating--none {
+  color: var(--text-muted);
+}
+
+/* ── description ───────────────────────────────────────────────────────── */
+
+.prose,
+.rating,
+.write,
+.reviews {
+  margin-block-start: var(--space-8);
+}
+
+.prose h2,
+.rating h2,
+.write h2,
+.reviews h2 {
+  margin-block-end: var(--space-3);
+  font-size: var(--text-20);
+}
+
+/* The column is now the site's full measure, which is wider than a line of
+   prose wants to be. The paragraph keeps its own. */
+.prose__body {
+  max-inline-size: 68ch;
+  color: var(--text-secondary);
+  font-size: var(--text-16);
+}
+
+/* ── rating summary ────────────────────────────────────────────────────── */
+
+.rating__body {
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: center;
+  padding: var(--space-6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sheet);
+  background: var(--surface-raised);
+}
+
+@media (max-width: 40rem) {
+  .rating__body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+.rating__average {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rating__number {
+  font-size: var(--text-38);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+}
+
+.rating__unrated {
+  font-size: var(--text-20);
+  font-weight: 600;
+}
+
+.rating__scale,
+.rating__count {
+  color: var(--text-muted);
+  font-size: var(--text-14);
+}
+
+.bars {
+  display: grid;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+}
+
+.bars__row {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr) 2.5rem;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-12);
+}
+
+.bars__label,
+.bars__count {
+  color: var(--text-muted);
+}
+
+.bars__count {
+  text-align: end;
+}
+
+.bars__track {
+  block-size: 8px;
+  border-radius: var(--radius-pressed);
+  background: var(--rating-track);
+  overflow: hidden;
+}
+
+.bars__fill {
+  display: block;
+  block-size: 100%;
+  border-radius: var(--radius-pressed);
+  background: var(--rating-mark);
+  transition: inline-size var(--duration-slow) var(--ease);
+}
+
+/* ── form ──────────────────────────────────────────────────────────────── */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sheet);
+  background: var(--surface-raised);
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form__label {
+  color: var(--text-secondary);
+  font-size: var(--text-12);
+  font-weight: 500;
+}
+
+.form__textarea {
+  padding: var(--space-3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-control);
+  background: var(--surface-base);
+  font-size: var(--text-14);
+  resize: vertical;
+}
+
+.form__textarea:disabled {
+  opacity: 0.7;
+}
+
+.form__error {
+  padding: var(--space-3);
+  border: 1px solid var(--status-danger-border);
+  border-radius: var(--radius-control);
+  background: var(--status-danger-surface);
+  color: var(--status-danger);
+  font-size: var(--text-14);
+}
+
+.form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.form__hint {
+  color: var(--text-muted);
+  font-size: var(--text-12);
+}
+
+/* ── reviews ───────────────────────────────────────────────────────────── */
+
+.reviews__list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+}
+
+.review {
+  padding: var(--space-4);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  background: var(--surface-raised);
+}
+
+.review__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-block-end: var(--space-2);
+}
+
+.review__author {
+  color: var(--text-muted);
+  font-size: var(--text-12);
+}
+
+.review__score {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.review__score svg {
+  inline-size: 14px;
+  block-size: 14px;
+  fill: var(--rating-track);
+}
+
+.review__score svg.is-on {
+  fill: var(--rating-mark);
+}
+
+.review__body {
+  max-inline-size: 76ch;
+  color: var(--text-secondary);
+  font-size: var(--text-14);
+}
+
+/* ── skeleton ──────────────────────────────────────────────────────────── */
+
+.skeleton__cover {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sheet);
+}
+
+.skeleton__panel {
+  block-size: 22rem;
+  border-radius: var(--radius-sheet);
+}
+
+.skeleton__line {
+  block-size: 14px;
+  margin-block-start: var(--space-3);
+  border-radius: var(--radius-inset);
+}
+
+.skeleton__line--title {
+  block-size: 30px;
+  inline-size: 60%;
+  margin-block-start: var(--space-6);
+}
+
+.skeleton__line--short {
+  inline-size: 35%;
+}
+
+.skeleton__cover,
+.skeleton__panel,
+.skeleton__line {
+  /*
+   * Page 6: "Nothing else in the interface is a gradient." So the placeholder
+   * pulses its opacity instead of sweeping a sheen across itself.
+   */
+  background: var(--surface-skeleton);
+  animation: pulse 1.4s var(--ease) infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}

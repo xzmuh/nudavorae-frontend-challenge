@@ -1,0 +1,156 @@
+<div class="head">
+  <h1 class="head__title">Packs</h1>
+  <p class="head__lede">Sets of private files, sold by their creators.</p>
+</div>
+
+<!--
+  A search field and a sort control. `role="search"` names the region; the
+  native <select> is the sort control, because a hand-built listbox would be a
+  worse answer to the same question the brief is asking — focus behaviour and
+  announcement — than the one the platform already ships.
+-->
+<form class="controls" role="search" (submit)="$event.preventDefault()">
+  <div class="field">
+    <label class="field__label" for="search">Search packs</label>
+    <div class="field__box">
+      <svg class="field__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M10.6 2.4a8.2 8.2 0 1 1 0 16.4 8.2 8.2 0 0 1 0-16.4Zm0 2a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm6.9 12.1 4.1 4.1a1 1 0 0 1-1.4 1.4l-4.1-4.1a1 1 0 0 1 1.4-1.4Z"
+        />
+      </svg>
+      <!--
+        Deliberately not `[value]`-bound. Navigation is async: binding the field
+        to the URL means a keystroke that lands while the previous navigation is
+        still resolving gets overwritten by the older value. The component syncs
+        it instead, and only while the field does not have focus.
+      -->
+      <input
+        #search
+        id="search"
+        class="field__input"
+        type="search"
+        name="q"
+        autocomplete="off"
+        placeholder="Title or creator"
+        (input)="onSearch(search.value)"
+      />
+    </div>
+  </div>
+
+  <div class="field field--sort">
+    <label class="field__label" for="sort">Sort by</label>
+    <!--
+      A native <select>, in the same box as the search field. The list itself is
+      the operating system's, which is the point: it is the one control whose
+      focus behaviour, keyboard model and announcement are already correct on
+      every platform, and page 5 asks for exactly four hand-built things rather
+      than a component library's answer to that question.
+    -->
+    <div class="field__box field__box--select">
+      <select #sortSelect id="sort" class="field__select" (change)="onSort(sortSelect.value)">
+        @for (option of sortOptions; track option.value) {
+          <option [value]="option.value" [selected]="option.value === sort()">
+            {{ option.label }}
+          </option>
+        }
+      </select>
+      <svg class="field__chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M6.7 9.3a1 1 0 0 1 1.4 0L12 13.2l3.9-3.9a1 1 0 1 1 1.4 1.4l-4.6 4.6a1 1 0 0 1-1.4 0L6.7 10.7a1 1 0 0 1 0-1.4Z"
+        />
+      </svg>
+    </div>
+  </div>
+</form>
+
+@let status = store.status();
+
+<!--
+  One region for all four outcomes. `aria-busy` marks it stale while a request
+  is in flight; the spoken announcement is made by LiveAnnouncer in the
+  component, because only it knows a state *replaced* another.
+-->
+<section class="results" [attr.aria-busy]="status === 'loading'" aria-labelledby="results-heading">
+  <h2 id="results-heading" class="visually-hidden">Results</h2>
+
+  @switch (status) {
+    @case ('loading') {
+      <ul class="grid" aria-hidden="true">
+        @for (n of skeletons; track n) {
+          <li class="skeleton">
+            <div class="skeleton__cover"></div>
+            <div class="skeleton__line skeleton__line--title"></div>
+            <div class="skeleton__line skeleton__line--short"></div>
+          </li>
+        }
+      </ul>
+    }
+
+    @case ('error') {
+      <nud-state-panel
+        tone="error"
+        heading="The catalogue did not load"
+        [body]="store.error()?.message ?? 'The marketplace did not answer.'"
+      >
+        <button type="button" class="button button--primary" (click)="store.retry()">
+          Try again
+        </button>
+      </nud-state-panel>
+    }
+
+    @case ('empty') {
+      <!--
+        Page 2: "An empty result after a search is a different screen from an
+        empty catalogue." Different heading, different body, different action.
+      -->
+      @if (store.isSearching()) {
+        <nud-state-panel
+          heading="No packs match that search"
+          [body]="'Nothing came back for “' + store.query().q + '”. Try a shorter word, or a creator handle.'"
+        >
+          <button type="button" class="button" (click)="clearSearch()">Clear search</button>
+        </nud-state-panel>
+      } @else {
+        <nud-state-panel
+          heading="The catalogue is empty"
+          body="No creator has published a pack yet. When one does, it shows up here."
+        />
+      }
+    }
+
+    @default {
+      <!-- RF4: a list to a screen reader, not a pile of divs. -->
+      <ul class="grid">
+        @for (pack of store.items(); track pack.id) {
+          <li class="grid__item">
+            <nud-pack-card [pack]="pack" />
+          </li>
+        }
+      </ul>
+
+      @if (store.error(); as failure) {
+        <!--
+          A "load more" that failed: the cards already on screen are still true,
+          so they stay, and the failure is reported next to the control that
+          caused it rather than replacing the list.
+        -->
+        <p class="more-error" role="status">{{ failure.message }}</p>
+      }
+
+      @if (store.hasMore()) {
+        <div class="more">
+          <button
+            type="button"
+            class="button button--primary"
+            [disabled]="store.loadingMore()"
+            (click)="store.loadMore()"
+          >
+            {{ store.loadingMore() ? 'Loading…' : 'Load more' }}
+          </button>
+        </div>
+      } @else {
+        <p class="more-end">{{ headingCount() }} — that is all of them.</p>
+      }
+    }
+  }
+</section>

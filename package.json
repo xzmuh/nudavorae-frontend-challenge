@@ -1,13 +1,15 @@
 {
-  "name": "servio-challenge",
+  "name": "nudavorae-frontend-challenge",
   "private": true,
-  "version": "1.0.0",
-  "description": "Service catalog + service detail challenge: Angular 20 front-end and a Node/TypeScript mock API",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "workspaces": ["app"],
   "scripts": {
-    "setup": "npm --prefix api install && npm --prefix web install",
-    "api": "npm --prefix api run dev",
-    "web": "npm --prefix web start",
-    "build": "npm --prefix web run build",
-    "typecheck": "npm --prefix api run typecheck && npm --prefix web run typecheck"
+    "start": "node scripts/dev.mjs",
+    "stub": "node stub/server.mjs",
+    "seed": "node stub/generate-seed.mjs",
+    "build": "npm run build --workspace app",
+    "test": "npm test --workspace app",
+    "lint:tokens": "node scripts/check-tokens.mjs"
   }
 }

@@ -1,0 +1,249 @@
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * THE SEMANTIC LAYER — layer two of two.
+ *
+ * `tokens/palette.css` is the starter's, and it names what things *are*:
+ * `--nud-primary-600`, `--nud-space-4`, `--nud-radius-card`. This file names
+ * what they are *for*: `--surface-base`, `--text-primary`, `--rating-mark`.
+ *
+ * Two rules hold it up, and `npm run lint:tokens` fails on either:
+ *
+ *   1. Components read this layer and never a primitive. A `--nud-*` outside
+ *      this file is a component that cannot be re-themed.
+ *   2. No colour value exists outside the two token files.
+ *
+ * The asymmetry the brief points at — three dark surfaces against one light
+ * one — is why this layer has to exist at all: there is no one-to-one mapping
+ * from the palette to a screen, only a composition. Light builds its surfaces
+ * from white and the neutral ramp; dark remaps the same names onto the three
+ * dark surfaces.
+ *
+ * Three theme states, because RF9 asks for two behaviours at once — "the theme
+ * survives a reload" and "it follows the operating system until the user
+ * overrides it":
+ *
+ *   :root                                        the light palette, always defined
+ *   :root:not([data-theme='light']) @media dark  the OS preference, unoverridden
+ *   :root[data-theme='dark']                     an explicit choice, wins over both
+ *
+ * No token is defined *only* inside a media query: light is the complete
+ * baseline and the dark blocks redefine, never introduce.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ── surfaces ─────────────────────────────────────────────────────────── */
+  /* The palette holds one light surface (neutral-50). Cards have to sit above
+     the page, so raised is plain white — the value the ramp implies and the
+     starter's own note on this layer names. */
+  --surface-base: var(--nud-neutral-50);
+  --surface-raised: #ffffff;
+  --surface-overlay: #ffffff;
+  --surface-header: color-mix(in oklab, var(--nud-neutral-50) 88%, transparent);
+  --surface-hover: color-mix(in oklab, var(--nud-neutral-200) 28%, transparent);
+  --surface-skeleton: color-mix(in oklab, var(--nud-neutral-200) 55%, var(--nud-neutral-50));
+
+  /* ── text ─────────────────────────────────────────────────────────────── */
+  --text-primary: var(--nud-neutral-900);
+  /* A real step apart. Both were neutral-600, which made "secondary" and
+     "muted" two names for one value and left fine print on a tinted surface at
+     4.28:1 — just under AA. */
+  --text-secondary: color-mix(in oklab, var(--nud-neutral-600) 74%, var(--nud-neutral-900));
+  --text-muted: var(--nud-neutral-600);
+  --text-on-brand: #ffffff;
+
+  /* ── borders ──────────────────────────────────────────────────────────── */
+  --border-subtle: var(--nud-neutral-200);
+  --border-strong: var(--nud-neutral-600);
+
+  /* ── brand ────────────────────────────────────────────────────────────── */
+  --brand: var(--nud-primary-600);
+  --brand-strong: var(--nud-primary-700);
+  --brand-soft: var(--nud-primary-50);
+  /* Brand as a *ground*, with --text-on-brand sitting on it, which is a
+     different requirement from brand as ink: ink has to lift on a near-black
+     page, a ground has to stay dark enough to carry white. In light they are
+     the same value; in dark they must not be, and white on a lifted brand is
+     3.6:1 — under AA on the one control the screen is built around. */
+  --brand-ground: var(--nud-primary-600);
+  --accent: var(--nud-accent-600);
+  --accent-soft: var(--nud-accent-50);
+
+  /* Page 6: "Nothing else in the interface is a gradient." One token, read by
+     the brand mark and by nothing else. */
+  --brand-gradient: var(--nud-gradient-brand);
+
+  /* ── status ───────────────────────────────────────────────────────────── */
+  --status-success: var(--nud-success-600);
+  --status-warning: var(--nud-warning-500);
+  --status-danger: var(--nud-danger-600);
+  --status-danger-surface: color-mix(in oklab, var(--nud-danger-600) 8%, var(--surface-raised));
+  --status-danger-border: color-mix(in oklab, var(--nud-danger-600) 34%, var(--surface-raised));
+
+  /* The rating marks read as a status rather than as brand: they carry a value. */
+  --rating-mark: var(--nud-warning-500);
+  --rating-track: var(--nud-neutral-200);
+
+  /* ── focus ────────────────────────────────────────────────────────────── */
+  --focus-ring: var(--nud-primary-600);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+
+  /* ── elevation ────────────────────────────────────────────────────────── */
+  --shadow-raised: 0 1px 2px color-mix(in oklab, var(--nud-neutral-900) 8%, transparent),
+    0 8px 24px color-mix(in oklab, var(--nud-neutral-900) 6%, transparent);
+  --shadow-overlay: 0 12px 40px color-mix(in oklab, var(--nud-neutral-900) 18%, transparent);
+
+  /* ═══ the rest of the scales, aliased so a component never reaches past
+         this file for a measurement either ═════════════════════════════════ */
+
+  --font-heading: var(--nud-font-display);
+  --font-body: var(--nud-font-sans);
+  /* Page 6: "Money and ratings take the mono face because proportional digits
+     make a 1 narrower than a 4 and a column of prices stops lining up." */
+  --font-mono: var(--nud-font-mono);
+
+  --text-12: var(--nud-text-12);
+  --text-14: var(--nud-text-14);
+  --text-16: var(--nud-text-16);
+  --text-18: var(--nud-text-18);
+  --text-20: var(--nud-text-20);
+  --text-24: var(--nud-text-24);
+  --text-30: var(--nud-text-30);
+  --text-38: var(--nud-text-38);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+
+  --space-1: var(--nud-space-1);
+  --space-2: var(--nud-space-2);
+  --space-3: var(--nud-space-3);
+  --space-4: var(--nud-space-4);
+  --space-6: var(--nud-space-6);
+  --space-8: var(--nud-space-8);
+  --space-12: var(--nud-space-12);
+  --space-16: var(--nud-space-16);
+
+  --radius-inset: var(--nud-radius-inset);
+  --radius-control: var(--nud-radius-control);
+  --radius-card: var(--nud-radius-card);
+  --radius-sheet: var(--nud-radius-sheet);
+  /* Page 6: "full on anything pressed". */
+  --radius-pressed: var(--nud-radius-full);
+
+  /* The sticky header's full height, its border included. It is a token rather
+     than a number in two files because two things depend on it and they must
+     not drift: the header draws it, and anything sticky below has to clear it.
+     Derived from what the header is made of — the tallest thing in it is the
+     theme control, which is one 44px target inside 3px of padding and a 1px
+     border, sat in 12px of header padding. */
+  --header-height: calc(var(--target-min) + 8px + var(--space-3) * 2 + 1px);
+
+  --page-max: var(--nud-page-max);
+  --card-min: var(--nud-card-min);
+  --target-min: var(--nud-target-min);
+  --duration-fast: var(--nud-duration-fast);
+  --duration-slow: var(--nud-duration-slow);
+  --ease: var(--nud-ease);
+}
+
+/*
+ * The OS preference, only while the user has not overridden it. Guarded with
+ * :not([data-theme='light']) so an explicit light choice still wins on a
+ * machine set to dark.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --surface-base: var(--nud-dark-base);
+    --surface-raised: var(--nud-dark-raised);
+    --surface-overlay: var(--nud-dark-overlay);
+    --surface-header: color-mix(in oklab, var(--nud-dark-base) 88%, transparent);
+    --surface-hover: color-mix(in oklab, var(--nud-neutral-200) 10%, transparent);
+    --surface-skeleton: color-mix(in oklab, var(--nud-dark-overlay) 70%, var(--nud-neutral-600));
+
+    --text-primary: var(--nud-neutral-50);
+    --text-secondary: var(--nud-neutral-200);
+    /* neutral-600 alone falls under 4.5:1 on a near-black page, so muted text
+       is lifted towards neutral-200 rather than borrowed straight. */
+    --text-muted: color-mix(in oklab, var(--nud-neutral-200) 62%, var(--nud-neutral-600));
+
+    --border-subtle: var(--nud-dark-overlay);
+    --border-strong: var(--nud-neutral-600);
+
+    /* Page 6: the gradient "lifts one step to the 500s in dark, where the 600
+       pair goes muddy against a near-black page". The palette ships that
+       lifted gradient; the solid brand lifts by the same amount, or the two
+       disagree on one screen. */
+    --brand-gradient: var(--nud-gradient-brand-dark);
+    --brand: color-mix(in oklab, var(--nud-primary-600) 76%, var(--nud-primary-200));
+    --brand-strong: var(--nud-primary-600);
+    /* Deliberately not lifted: this one carries white text. */
+    --brand-ground: var(--nud-primary-600);
+    --brand-soft: var(--nud-primary-900);
+    --accent: color-mix(in oklab, var(--nud-accent-600) 76%, var(--nud-accent-200));
+    --accent-soft: var(--nud-accent-900);
+
+    --status-danger-surface: color-mix(in oklab, var(--nud-danger-600) 18%, var(--nud-dark-raised));
+    --status-danger-border: color-mix(in oklab, var(--nud-danger-600) 46%, var(--nud-dark-raised));
+
+    --rating-mark: color-mix(in oklab, var(--nud-warning-500) 62%, var(--nud-neutral-50));
+    /* dark-overlay sits a hair above dark-raised, so an unfilled star drawn in
+       it is invisible on a card. The track is lifted towards the neutral ramp
+       until an empty control still reads as a control. */
+    --rating-track: color-mix(in oklab, var(--nud-neutral-200) 32%, var(--nud-dark-overlay));
+
+    --focus-ring: var(--nud-primary-200);
+
+    --shadow-raised: 0 1px 2px color-mix(in oklab, var(--nud-dark-base) 60%, transparent),
+      0 8px 24px color-mix(in oklab, var(--nud-dark-base) 50%, transparent);
+    --shadow-overlay: 0 12px 40px color-mix(in oklab, var(--nud-dark-base) 70%, transparent);
+  }
+}
+
+/*
+ * The explicit override. Identical to the block above, and it has to be: a
+ * user who picks dark on a light machine gets the same screen as a user whose
+ * machine picked it for them.
+ */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --surface-base: var(--nud-dark-base);
+  --surface-raised: var(--nud-dark-raised);
+  --surface-overlay: var(--nud-dark-overlay);
+  --surface-header: color-mix(in oklab, var(--nud-dark-base) 88%, transparent);
+  --surface-hover: color-mix(in oklab, var(--nud-neutral-200) 10%, transparent);
+  --surface-skeleton: color-mix(in oklab, var(--nud-dark-overlay) 70%, var(--nud-neutral-600));
+
+  --text-primary: var(--nud-neutral-50);
+  --text-secondary: var(--nud-neutral-200);
+  --text-muted: color-mix(in oklab, var(--nud-neutral-200) 62%, var(--nud-neutral-600));
+
+  --border-subtle: var(--nud-dark-overlay);
+  --border-strong: var(--nud-neutral-600);
+
+  --brand-gradient: var(--nud-gradient-brand-dark);
+  --brand: color-mix(in oklab, var(--nud-primary-600) 76%, var(--nud-primary-200));
+  --brand-strong: var(--nud-primary-600);
+  --brand-ground: var(--nud-primary-600);
+  --brand-soft: var(--nud-primary-900);
+  --accent: color-mix(in oklab, var(--nud-accent-600) 76%, var(--nud-accent-200));
+  --accent-soft: var(--nud-accent-900);
+
+  --status-danger-surface: color-mix(in oklab, var(--nud-danger-600) 18%, var(--nud-dark-raised));
+  --status-danger-border: color-mix(in oklab, var(--nud-danger-600) 46%, var(--nud-dark-raised));
+
+  --rating-mark: color-mix(in oklab, var(--nud-warning-500) 62%, var(--nud-neutral-50));
+  --rating-track: color-mix(in oklab, var(--nud-neutral-200) 32%, var(--nud-dark-overlay));
+
+  --focus-ring: var(--nud-primary-200);
+
+  --shadow-raised: 0 1px 2px color-mix(in oklab, var(--nud-dark-base) 60%, transparent),
+    0 8px 24px color-mix(in oklab, var(--nud-dark-base) 50%, transparent);
+  --shadow-overlay: 0 12px 40px color-mix(in oklab, var(--nud-dark-base) 70%, transparent);
+}

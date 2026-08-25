@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nudavorae</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- No icon file, and no request for one: the starter ships no favicon. -->
+    <link rel="icon" href="data:," />
+    <script>
+      /*
+       * RF9: the theme survives a reload, and it follows the operating system
+       * until the user overrides it. Applied before the first paint so an
+       * override never shows a frame of the other theme. `system` writes
+       * nothing: the media query in semantic.css decides.
+       *
+       * The key is duplicated from ThemeService.THEME_STORAGE_KEY because this
+       * runs before any bundle does.
+       */
+      try {
+        var choice = localStorage.getItem('nudavorae.theme');
+        if (choice === 'light' || choice === 'dark') {
+          document.documentElement.setAttribute('data-theme', choice);
+        }
+      } catch (error) {
+        /* storage unavailable: fall through to the OS preference */
+      }
+    </script>
+  </head>
+  <body>
+    <nud-root></nud-root>
+  </body>
+</html>

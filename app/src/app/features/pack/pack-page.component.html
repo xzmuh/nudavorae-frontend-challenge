@@ -1,0 +1,251 @@
+<!--
+  Breadcrumb rather than a back arrow: the pack is one level down from the
+  catalogue and the trail says so. The title only appears once there is one.
+-->
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol class="crumbs__list">
+    <li class="crumbs__item"><a class="crumbs__link" routerLink="/">Browse</a></li>
+    @if (store.pack(); as loaded) {
+      <li class="crumbs__item crumbs__item--here" aria-current="page">{{ loaded.title }}</li>
+    }
+  </ol>
+</nav>
+
+@switch (store.status()) {
+  @case ('loading') {
+    <div class="layout" aria-hidden="true">
+      <div class="layout__main">
+        <div class="skeleton__cover"></div>
+        <div class="skeleton__line skeleton__line--title"></div>
+        <div class="skeleton__line skeleton__line--short"></div>
+        <div class="skeleton__line"></div>
+      </div>
+      <div class="layout__side">
+        <div class="skeleton__panel"></div>
+      </div>
+    </div>
+  }
+
+  @case ('error') {
+    <nud-state-panel
+      tone="error"
+      heading="This pack did not load"
+      [body]="store.error()?.message ?? 'The marketplace did not answer.'"
+    >
+      <button type="button" class="button button--primary" (click)="store.retry()">Try again</button>
+      <a class="button" routerLink="/">Back to the catalogue</a>
+    </nud-state-panel>
+  }
+
+  @default {
+    @if (store.pack(); as pack) {
+      <div class="layout">
+        <!-- ── the pack itself ─────────────────────────────────────────── -->
+        <div class="layout__main">
+          <figure class="media" #media>
+            <nud-protected-image
+              class="media__image"
+              [mediaId]="pack.coverMediaId"
+              [alt]="'Cover of ' + pack.title"
+              [width]="960"
+              [height]="540"
+              [fit]="isFullscreen() ? 'contain' : 'cover'"
+            />
+            <!--
+              The platform's own fullscreen, not a hand-built lightbox: it wins
+              on Escape, on the focus trap and on the OS chrome, and the button
+              says which of the two states pressing it produces.
+            -->
+            <button type="button" class="media__expand" (click)="toggleFullscreen(media)">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M4 9a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 2H5v3a1 1 0 0 1-1 1Zm16 0a1 1 0 0 1-1-1V5h-3a1 1 0 1 1 0-2h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1ZM4 15a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm16 0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z"
+                />
+              </svg>
+              {{ isFullscreen() ? 'Exit fullscreen' : 'Fullscreen' }}
+            </button>
+          </figure>
+
+          <h1 class="title">{{ pack.title }}</h1>
+
+          <!--
+            The reference has a file count here. The contract does not carry
+            one, so this line holds what is actually known: who made it, and
+            what it is rated.
+          -->
+          <p class="meta">
+            <span class="meta__by">by <span class="mono">{{ handle() }}</span></span>
+            <span class="meta__dot" aria-hidden="true">·</span>
+            @if (pack.rating !== null) {
+              <span class="meta__rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2.6l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.1l6.1-.9L12 2.6z" />
+                </svg>
+                <span class="mono">{{ pack.rating }}</span>
+                <span class="meta__count">
+                  ({{ pack.reviewCount }} {{ pack.reviewCount === 1 ? 'review' : 'reviews' }})
+                </span>
+              </span>
+            } @else {
+              <span class="meta__rating meta__rating--none">Not rated yet</span>
+            }
+          </p>
+
+          <section class="prose" aria-labelledby="description-heading">
+            <h2 id="description-heading">Description</h2>
+            <p class="prose__body">{{ pack.description }}</p>
+          </section>
+
+          <!-- ── the average, and its distribution across the five scores ─ -->
+          <section class="rating" aria-labelledby="rating-heading">
+            <h2 id="rating-heading">Rating</h2>
+
+            <div class="rating__body">
+              <p class="rating__average">
+                @if (pack.rating !== null) {
+                  <span class="rating__number mono">{{ pack.rating }}</span>
+                  <span class="rating__scale">out of 5</span>
+                  <span class="rating__count">
+                    {{ pack.reviewCount }} {{ pack.reviewCount === 1 ? 'review' : 'reviews' }}
+                  </span>
+                } @else {
+                  <span class="rating__unrated">Not rated yet</span>
+                  <span class="rating__scale">Be the first to review this pack.</span>
+                }
+              </p>
+
+              <ul class="bars">
+                @for (row of distribution(); track row.score) {
+                  <li class="bars__row">
+                    <span class="bars__label mono">{{ row.score }}</span>
+                    <span class="bars__track">
+                      <span class="bars__fill" [style.inline-size.%]="row.percent"></span>
+                    </span>
+                    <span class="bars__count mono">{{ row.count }}</span>
+                    <span class="visually-hidden">
+                      {{ row.count }} {{ row.count === 1 ? 'review' : 'reviews' }} gave
+                      {{ row.score }} {{ row.score === 1 ? 'star' : 'stars' }}
+                    </span>
+                  </li>
+                }
+              </ul>
+            </div>
+          </section>
+
+          <!-- ── the form: whichever of the three answers the stub gave ─── -->
+          <section class="write" aria-labelledby="write-heading">
+            @let permission = store.permission();
+
+            @if (permission.kind === 'blocked') {
+              <h2 id="write-heading">Reviews</h2>
+              @if (blocked(); as copy) {
+                <nud-state-panel [heading]="copy.heading" [body]="copy.body" />
+              }
+            } @else {
+              <h2 id="write-heading">
+                {{ permission.kind === 'can-change' ? 'Change your review' : 'Write a review' }}
+              </h2>
+
+              <form class="form" (submit)="onSubmit($event)">
+                <nud-rating-input
+                  name="score"
+                  [legend]="
+                    permission.kind === 'can-change'
+                      ? 'Change your rating, out of five'
+                      : 'Your rating, out of five'
+                  "
+                  [value]="score()"
+                  (valueChange)="onScore($event)"
+                  [disabled]="store.submitting()"
+                />
+
+                <div class="form__field">
+                  <label class="form__label" for="review-body">What should other buyers know?</label>
+                  <textarea
+                    #bodyField
+                    id="review-body"
+                    class="form__textarea"
+                    rows="4"
+                    maxlength="600"
+                    [value]="body()"
+                    [disabled]="store.submitting()"
+                    (input)="onBody(bodyField.value)"
+                  ></textarea>
+                </div>
+
+                @if (store.submitError(); as failure) {
+                  <!--
+                    RF5: the screen went back to the truth, and says what
+                    happened — in the server's own words, not a generic apology.
+                  -->
+                  <p class="form__error" role="alert">
+                    <strong>Your review was not saved.</strong>
+                    {{ failure.message }}
+                  </p>
+                }
+
+                <div class="form__actions">
+                  <button type="submit" class="button button--primary" [disabled]="!canSubmit()">
+                    {{
+                      store.submitting()
+                        ? 'Publishing…'
+                        : permission.kind === 'can-change'
+                          ? 'Save changes'
+                          : 'Publish review'
+                    }}
+                  </button>
+                  @if (score() === null) {
+                    <span class="form__hint">Pick a rating to publish.</span>
+                  }
+                </div>
+              </form>
+            }
+          </section>
+
+          <!-- ── the reviews themselves ──────────────────────────────────── -->
+          <section class="reviews" aria-labelledby="reviews-heading">
+            <h2 id="reviews-heading">
+              {{ store.reviews().length }}
+              {{ store.reviews().length === 1 ? 'review' : 'reviews' }}
+            </h2>
+
+            @if (store.reviews().length === 0) {
+              <nud-state-panel
+                heading="No reviews yet"
+                body="Nobody who bought this pack has written about it. The first one sets the average."
+              />
+            } @else {
+              <ul class="reviews__list">
+                @for (review of store.reviews(); track review.id) {
+                  <li class="review">
+                    <div class="review__head">
+                      <span class="review__author mono">{{ authorOf(review.authorHandle) }}</span>
+                      <span class="review__score mono" [attr.aria-label]="review.score + ' out of 5'">
+                        @for (star of scores; track star) {
+                          <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            focusable="false"
+                            [class.is-on]="star <= review.score"
+                          >
+                            <path
+                              d="M12 2.6l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.1l6.1-.9L12 2.6z"
+                            />
+                          </svg>
+                        }
+                      </span>
+                    </div>
+                    <p class="review__body">{{ review.body }}</p>
+                  </li>
+                }
+              </ul>
+            }
+          </section>
+        </div>
+
+        <!-- ── what you can do about it ────────────────────────────────── -->
+        <nud-pack-aside class="layout__side" [pack]="pack" />
+      </div>
+    }
+  }
+}

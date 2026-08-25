@@ -1,0 +1,61 @@
+:root {
+  --nud-primary-50: #f8f6ff;
+  --nud-primary-200: #cfc3f6;
+  --nud-primary-600: #8457d8;
+  --nud-primary-700: #663caf;
+  --nud-primary-900: #391e65;
+  --nud-accent-50: #fff4fa;
+  --nud-accent-200: #edbcd9;
+  --nud-accent-600: #ba4495;
+  --nud-accent-700: #932a74;
+  --nud-accent-900: #541241;
+  --nud-neutral-50: #f7f7f8;
+  --nud-neutral-200: #cbc9d0;
+  --nud-neutral-600: #736f81;
+  --nud-neutral-900: #2f2d36;
+  --nud-dark-base: #110f17;
+  --nud-dark-raised: #1c1a23;
+  --nud-dark-overlay: #292631;
+  --nud-success-600: #048342;
+  --nud-warning-500: #b47500;
+  --nud-danger-600: #ca413a;
+  --nud-gradient-brand: linear-gradient(135deg, var(--nud-primary-600), var(--nud-accent-600));
+  --nud-gradient-brand-dark: linear-gradient(135deg, #9a74e2, #c95faa);
+  --nud-font-display: 'Sora', system-ui, sans-serif;
+  --nud-font-sans: 'Public Sans', system-ui, sans-serif;
+  --nud-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --nud-text-12: 0.75rem;
+  --nud-text-14: 0.875rem;
+  --nud-text-16: 1rem;
+  --nud-text-18: 1.125rem;
+  --nud-text-20: 1.25rem;
+  --nud-text-24: 1.5rem;
+  --nud-text-30: 1.875rem;
+  --nud-text-38: 2.375rem;
+  --nud-space-1: 4px;
+  --nud-space-2: 8px;
+  --nud-space-3: 12px;
+  --nud-space-4: 16px;
+  --nud-space-6: 24px;
+  --nud-space-8: 32px;
+  --nud-space-12: 48px;
+  --nud-space-16: 64px;
+  --nud-radius-inset: 4px;
+  --nud-radius-control: 10px;
+  --nud-radius-card: 14px;
+  --nud-radius-sheet: 20px;
+  --nud-radius-full: 9999px;
+  --nud-ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --nud-duration-fast: 120ms;
+  --nud-duration-slow: 200ms;
+  --nud-page-max: 1280px;
+  --nud-card-min: 260px;
+  --nud-target-min: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --nud-duration-fast: 0ms;
+    --nud-duration-slow: 0ms;
+  }
+}

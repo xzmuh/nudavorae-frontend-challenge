@@ -1,183 +1,151 @@
-# Servio — catálogo de serviços
+# Nudavorae — frontend challenge
 
-Duas telas (**catálogo** e **detalhe do serviço**), cada uma com os quatro estados
-(padrão, carregando, vazio e erro), servidas por uma API mock em Node/TypeScript
-com 2.400 serviços semeados.
+Two screens — the catalogue and a pack — in Angular 20, against the starter's
+stub on port 4010.
 
-> Procurando onde fica cada coisa? Veja o **[GUIA.md](GUIA.md)** — mapa do
-> projeto, o que cada arquivo faz e onde mexer para mudar cada coisa.
-
-- `web/` — Angular 20 (standalone + signals), CSS próprio com design tokens.
-- `api/` — servidor HTTP em Node + TypeScript, sem framework.
-
-Sem biblioteca de componentes, sem framework CSS utilitário, sem CDN: fontes,
-ícones e imagens vêm do próprio projeto.
-
----
-
-## Como rodar
+## Run
 
 ```bash
-npm run setup      # instala api/ e web/
-
-# terminal 1
-npm run api        # http://localhost:4000
-
-# terminal 2
-npm run web        # http://localhost:4200
+npm install
+npm start
 ```
 
-`npm run typecheck` roda o TypeScript dos dois projetos.
-
----
-
-## API (`api/`)
-
-Servidor HTTP puro, dados gerados por PRNG determinístico (mesma semente →
-mesmo catálogo a cada boot). **2.400 serviços**, 320 vendedores e reviews.
-
-| # | Rota | Descrição |
-|---|------|-----------|
-| 1 | `GET /api/meta` | categorias com contagem, faixa de preço global, ordenações |
-| 2 | `GET /api/services` | busca + ordenação + faixa de preço + categorias + paginação |
-| 3 | `GET /api/services/:id` | detalhe + serviços relacionados |
-| 4 | `GET /api/services/:id/reviews` | reviews paginadas |
-| 5 | `POST /api/services/:id/reviews` | publica review e recalcula a média |
-| 6 | `GET /api/images/:imageId` | **mídia privada** (SVG gerado, exige `Authorization`) |
-
-Auxiliares: `GET /api/health` (público) e `/api/__chaos/rules` (controle de falhas).
-
-Todas as rotas exigem `Authorization: Bearer svc_demo_fixed_token_2026` — o
-mesmo token fixo que o interceptor do front injeta.
-
-### Atraso e erro em uma resposta específica
-
-Dois mecanismos:
-
-1. **Por requisição** — `?_delay=2000` e/ou `?_status=500` (ou os headers
-   `x-chaos-delay` / `x-chaos-status`) afetam só aquela chamada.
-2. **Por regra** — `POST /api/__chaos/rules` casa método + trecho do path +
-   valores de query, então dá para atingir **uma resposta específica**:
+The app is on <http://localhost:4200> and the stub on <http://localhost:4010>.
+Node 22 LTS or newer (`.nvmrc`).
 
 ```bash
-# deixa apenas a busca por "sor" 3s mais lenta
-curl -X POST http://localhost:4000/api/__chaos/rules \
-  -H "Authorization: Bearer svc_demo_fixed_token_2026" \
-  -H "content-type: application/json" \
-  -d '{"label":"slow sor","pathContains":"/api/services","queryMatch":{"q":"sor"},"delayMs":3000}'
+npm test              # the RF2 and RF7 specs, plus the RF4 keyboard one
+                      # and the RF6 one that pins *when* the scroll offset is read
+npm run build
+npm run lint:tokens   # fails on a colour, or a primitive, outside the token files
 ```
 
-`GET` lista, `DELETE /api/__chaos/rules/:id` remove, `DELETE /api/__chaos/rules`
-limpa tudo. `times` limita a regra a N respostas; `matchMode` aceita
-`equals` (padrão), `contains` e `startsWith`.
+## How to break it
 
-O painel **Lab**, no header da aplicação, aplica esses presets com um clique —
-não é preciso usar curl para testar nenhum dos cenários.
+The stub's three levers are read from the **page** URL and travel to every
+request the app makes while they are there. So they go in the address bar of the
+app, not of the stub, and nothing in the app persists them or pushes a history
+entry for them.
 
----
+**Slow — a delayed search (RF2).**
 
-## Como verificar cada requisito
-
-### Estado na URL
-Busca, ordenação, faixa de preço, categorias **e a profundidade da paginação**
-vivem em `?q=&sort=&minPrice=&maxPrice=&category=&pages=`. A URL é a **única
-fonte de verdade**: o componente lê `queryParamMap` e qualquer mudança navega
-com `replaceUrl`. Como `pages` também está lá, recarregar com 72 cards na tela
-devolve os mesmos 72 cards (uma requisição só, não N), não a primeira página.
-
-### Resposta antiga nunca sobrescreve a mais nova
-Abra o Lab → “Delay searches starting with «sor» by 3s”. Digite `sor`, espere um
-instante e complete para `sorvete`. O resultado de `sor` nunca aparece.
-
-Duas garantias, ambas sem timer:
-
-- as requisições passam por `switchMap` (`CatalogStore`), que cancela — de fato
-  aborta — a chamada anterior;
-- todo resultado carrega o *token* da requisição que o originou e é descartado se
-  esse token não for o mais recente.
-
-### Imagens privadas
-`<img>` não envia headers, então as imagens são baixadas via `HttpClient`
-(passando pelo interceptor com o token), viram `objectURL` e ficam em cache no
-`ProtectedImageService` — voltar para a lista não rebaixa nenhuma imagem.
-
-### Avaliação pelo teclado
-Cada estrela é uma parada de Tab: **Tab / Shift+Tab** andam estrela a estrela,
-**Espaço ou Enter** selecionam a que está em foco (ativação nativa de `<button>`).
-As setas ←/→/↑/↓ movem e já selecionam, **Home/End** vão para 1 e 5 e as teclas
-`1`–`5` selecionam direto. A estrela em foco aparece em preview ("Space to
- select") antes de virar escolha, o foco é sempre visível e o valor escolhido é
-anunciado por uma região `role="status"`. Dá para avaliar e publicar sem tocar
-no mouse: Tab até a estrela → Espaço → Tab → Tab → Enter.
-
-### Média otimista com rollback
-Ao publicar, média e contagem mudam na hora (e também no card já em cache da
-lista). Lab → “Fail publishing a review (500)”: a média volta exatamente ao valor
-anterior e o aviso de erro explica o que aconteceu.
-
-### Voltar restaura a lista
-`CatalogStore` é singleton: guarda itens paginados, filtros e offset de scroll.
-Ao voltar, `load()` percebe que os filtros são os mesmos e **não busca nada** —
-sem spinner, sem refetch — e o scroll é restaurado em `afterNextRender`.
-(`withInMemoryScrolling({ scrollPositionRestoration: 'disabled' })` +
-`history.scrollRestoration = 'manual'` garantem que ninguém mais mexa no scroll.)
-
-### Claro e escuro
-Toggle no header; o tema é aplicado no `<html data-theme>` antes da primeira
-pintura (script inline no `index.html`), então não há flash. Ambos os modos usam
-os mesmos tokens.
-
-### Fontes locais
-`@fontsource-variable/inter` e `@fontsource-variable/plus-jakarta-sans` são
-dependências do projeto — os `.woff2` saem no bundle (`dist/web/browser/media/`).
-Nenhuma requisição sai para fora de `localhost`.
-
----
-
-## Interface
-
-- **Dropdown próprio** (`app-select-menu`): padrão combobox + listbox, sem
-  `<select>` e sem biblioteca. Enter/Espaço/setas abrem, setas e Home/End
-  navegam, Enter escolhe, Esc fecha e devolve o foco ao gatilho. Gatilho e
-  opções são `<button>` de verdade.
-- **Filtros recolhíveis**: a barra fica com busca + ordenação + botão
-  “Filters” (com contador). Preço e categorias ficam no painel; o que está
-  ativo aparece como chip removível, então nada fica escondido do usuário.
-- **Responsivo**: verificado em 390px, 768px e 1440px sem scroll horizontal.
-  No detalhe, a tira de miniaturas rola sozinha e a coluna lateral vira bloco.
-
----
-
-## Design system
-
-`web/src/styles/tokens.css` concentra cores (claro/escuro), tipografia, escala de
-espaçamento (4 → 80), raios, sombras, durações e z-index. Nenhum componente
-escreve um valor cru: quando chegar a tabela final do desafio, só esse arquivo
-muda. `web/src/styles.css` traz as primitivas (`.btn`, `.input`, `.select`,
-`.chip`, `.card`, `.skeleton`) e o reset.
-
----
-
-## Critérios eliminatórios
-
-- **Zero `any` e zero `@ts-ignore`/`@ts-expect-error`** no repositório. O front
-  roda com `strict` + `noUnusedLocals` + `noUnusedParameters` +
-  `noUncheckedIndexedAccess` e `strictTemplates`; a API acrescenta
-  `exactOptionalPropertyTypes`. Payloads externos entram como `unknown` e são
-  estreitados por type guards.
-- **Nenhum `setTimeout` no front-end.** A condição de corrida é resolvida por
-  `switchMap` + token de requisição. O único timer do projeto está na API
-  (`node:timers/promises`) e é o próprio atraso artificial pedido no enunciado.
-
-```bash
-grep -rn "setTimeout" web/src        # nada
-grep -rnE ":\s*any\b|as any|@ts-ignore" api/src web/src   # nada
+```
+http://localhost:4200/?delay=3000
 ```
 
----
+Type `lat`, wait a beat, then finish the word to `latex`. `lat` matches eight
+packs and `latex` matches one, so the two answers look nothing alike: the answer
+for `lat` arrives last and never reaches the screen.
 
-## Fora de escopo (conforme o enunciado)
+**Empty — a page with no items.**
 
-Sem autenticação (token fixo no interceptor), upload, checkout, chat, dashboard
-do criador, novo design system, SSR ou camada de i18n. Os botões “Buy”,
-“Message seller” e “Sign in” são apenas superfície visual.
+```
+http://localhost:4200/?empty=1
+http://localhost:4200/?empty=1&q=latex
+```
+
+Two different screens, deliberately: an empty catalogue, and a search that found
+nothing.
+
+```
+http://localhost:4200/packs/pack_0001?empty=1
+```
+
+The same lever on a pack empties the review list but leaves the permission
+alone — "no reviews yet, and you may write the first".
+
+**Failed — an error with a message.**
+
+```
+http://localhost:4200/?fail=500
+```
+
+For the failing **POST** of RF5, open a pack that you are allowed to review and
+add the lever once it has loaded:
+
+```
+http://localhost:4200/packs/pack_0001
+                                        ← then edit the address bar to:
+http://localhost:4200/packs/pack_0001?fail=500
+```
+
+Nothing refetches when you do that — the levers are not application state — so
+the pack stays on screen and only the review you publish carries the failure.
+The average moves the moment you press publish, then rolls back with the stub's
+own message, and your text is still in the field.
+
+Other statuses work the same way: `?fail=503`, `?fail=422`, `?fail=429`. Levers
+combine: `?delay=1500&fail=500`.
+
+## Packs that reach each state
+
+| Pack | What the stub answers |
+| --- | --- |
+| `pack_0001` | you can write a review |
+| `pack_0000` | you can write the first — `rating` is `null`, not `0.0` |
+| `pack_0003` | `already_reviewed` |
+| `pack_0007` | `not_purchased` |
+| `pack_0028` | `pack_removed` |
+
+Publish a review on `pack_0001` and the stub attributes it to `you`: the form
+then opens prefilled, as the review you may change. Writes live in memory, so a
+restart of the stub puts every pack back.
+
+## What this is built out of
+
+Page 5 rules out a component library, a utility CSS framework and a store
+library. So, in full — every runtime dependency in `app/package.json`, with
+nothing elided:
+
+| | |
+| --- | --- |
+| `@angular/core`, `common`, `router`, `forms`, `compiler`, `platform-browser` | the framework |
+| `@angular/cdk` | `LiveAnnouncer`, and nothing else. Page 5: "the CDK is not one of those: it is behaviour without an opinion." |
+| `rxjs`, `tslib` | one stream, and the compiler's helpers |
+
+The `devDependencies` are the Angular CLI and build, and Karma with Jasmine.
+None of them reaches the browser.
+
+So there is no Material, PrimeNG, Taiga, Tailwind, Bootstrap, NgRx, NGXS or Elf,
+and no icon package either: every glyph on screen is an inline `<svg>` path in
+the component that draws it.
+
+Which means the controls are hand-built, and there are four of them:
+
+- **the rating input** — five real radios in a `fieldset`, so the group is one
+  tab stop with arrow keys, Home/End and wrapping from the browser;
+- **the pack card**, **the three-state panel** and **the theme switch** — the
+  last one three radios, because there are two themes and `system` is the
+  absence of a choice rather than a third;
+- **the sort control is a native `<select>`**, deliberately. It is styled to
+  match the search field, but the list is the operating system's: no hand-built
+  listbox is going to beat the platform on focus, keyboard and announcement, and
+  page 5 asks for the four things you need rather than a fifth you do not.
+
+State is signals in two root-provided services and one route-provided one, which
+is what page 5 says it expects to see instead of a store library.
+
+## What moved, and the one thing that changed
+
+The starter is intact and at the root, with the application in `app/` where
+`scripts/dev.mjs` expects it. `stub/`, `tokens/palette.css` and `assets/fonts/`
+are the starter's files, unedited.
+
+One change, because the starter asks that changes be named: `scripts/dev.mjs`
+spawned both children with `shell: true` on Windows, which concatenates rather
+than escapes. The stub is spawned as `process.execPath`, and on a default
+Windows install that is `C:\Program Files\nodejs\node.exe` — the shell split it
+at the space and `npm start` never started the stub. The shell is now asked for
+only by the child that needs it, `npm`. The stub itself is untouched.
+
+```
+app/      the Angular application
+stub/     the starter's stub, unedited          (port 4010)
+tokens/   the starter's primitives, unedited
+assets/   the starter's self-hosted fonts
+scripts/  dev.mjs (starter, one fix) and the token check
+```
+
+`proxy.conf.example.json` is left where the starter put it and is not used: the
+app talks to `http://localhost:4010` directly, which the stub's CORS headers
+allow.
