@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- The brand mark: the page-6 gradient, primary-600 to accent-600, on the
+       rounded square the brief carries on its cover. A favicon cannot read a
+       custom property, so these two are the primitives themselves. -->
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8457d8"/>
+      <stop offset="1" stop-color="#ba4495"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#brand)"/>
+  <path fill="#ffffff" d="M18 47V17h7.2l13.6 18.9V17H46v30h-7.2L25.2 28.1V47Z"/>
+</svg>
